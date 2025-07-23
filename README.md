@@ -1,5 +1,12 @@
 ## Customer Churn Analysis: End-to-End Data Science Project
 
+
+![](./images/Comms.jpg)
+
+Image By: [TechFunnel](https://www.pinterest.com/pin/114208540542795588/)
+
+
+
 A comprehensive machine learning pipeline to **analyze**, **model**, and **predict customer churn** for a telecom company. The goal is to help the business proactively **identify customers at risk of leaving** and design **data-driven retention strategies**.
 
 ---
@@ -24,16 +31,17 @@ Customer churn is a major challenge in the telecom industry, leading to **loss o
 
 ## Project Structure
 
-customer-churn-analysis/
-│
-├── data/ # Raw & cleaned datasets
-├── visuals/ # Plots and figures
-├── notebooks/
-│ └── churn_analysis.ipynb # Full EDA, modeling, evaluation
-├── models/ # Saved models (optional)
-├── requirements.txt # Dependencies
-├── README.md # Project documentation
-└── .gitignore # Files to ignore
+
+- *`README.md` — Project documentation*
+- *`notebooks`  — churn_analysis.ipynb - Full EDA, modeling, evaluation*
+- *`Images/` — Saved plots and figures*
+- *`Data/` — Raw & cleaned datasets*
+- *`Presentation/` — Project summary slides PDF*
+
+
+
+
+
 
 
 ---
