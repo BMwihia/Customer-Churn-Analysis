@@ -105,17 +105,50 @@ We trained and evaluated 4 models using pipelines:
 
 Used `GridSearchCV` to tune **Random Forest**:
 
-```python
 param_grid = {
   'n_estimators': [100, 200],
   'max_depth': [None, 10, 20],
   'min_samples_split': [2, 5],
   'min_samples_leaf': [1, 2]
 }
+Best Parameters found
 {
   "max_depth": null,
   "min_samples_leaf": 1,
   "min_samples_split": 2,
   "n_estimators": 100
 }
+Despite tuning, XGBoost remained the top model.
 
+## Key Insights
+Frequent customer service calls → strong churn indicator
+
+Customers on international plans are more likely to churn
+
+Logistic Regression struggles with non-linear decision boundaries
+
+Tree-based models (Decision Trees, XGBoost) capture feature interactions well
+
+Class imbalance remains a challenge → consider SMOTE or class weighting
+
+## Final Conclusion
+The XGBoost Classifier delivered the best performance:
+
+F1 Score: 0.80
+
+Recall: 0.72
+
+Best at identifying churners while minimizing false positives
+
+Data preprocessing, proper feature engineering, and model selection significantly improved the predictive power.
+
+## Recommendations
+**Action**	  &      **Details**
+
+**Customer Escalation**	- Customers with >3 service calls should be flagged and prioritized for retention
+
+**Plan Incentives** -	Offer loyalty rewards or discounts for users on international plans
+
+**Predictive Scoring** -	Deploy the model to assign a churn risk score to each customer
+
+**Data Expansion** - Collect additional data like monthly billing, customer satisfaction, and contract duration to improve accuracy
