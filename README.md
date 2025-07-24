@@ -118,6 +118,14 @@ Best Parameters found
   "min_samples_split": 2,
   "n_estimators": 100
 }
+
+## Performance Observation
+Despite this tuning effort, the XGBoost classifier still outperformed the Random Forest in terms of Recall and F1-Score, making it the superior choice for detecting churned customers.
+
+Model	Precision	Recall	F1-Score
+Random Forest	0.95	0.38	0.54
+XGBoost	0.90	0.72	0.80
+
 Despite tuning, XGBoost remained the top model.
 
 ## Key Insights
